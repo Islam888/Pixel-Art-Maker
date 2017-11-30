@@ -29,6 +29,7 @@ $('#pixel_canvas').on('click' ,'td' ,function () {
 *and returns a new one with the new values of height and width eneterd by the user.
 */
 
+
 function makeGrid() {
     $('tr').remove();
     $('td').remove();
