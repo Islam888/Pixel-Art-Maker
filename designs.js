@@ -7,6 +7,10 @@ $('#sizePicker').submit(function () {
     makeGrid();
     return false;   
 });
+$('#gridClearer').submit(function (){
+    clearGrid();
+    return false;
+});
  
 // Select color input
 $('#pixel_canvas').on('click' ,'td' ,function () { 
@@ -37,4 +41,10 @@ function makeGrid() {
             $("#pixel_canvas").children().last().append('<td></td>');
         }
     }
+}
+
+function clearGrid() {
+
+    $('td').attr('bgcolor' ,"#ffffff");
+
 }
