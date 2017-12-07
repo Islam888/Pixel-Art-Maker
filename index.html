@@ -8,23 +8,27 @@
     
 </head>
 <body>
-    <h1>Lab: Pixel Art Maker</h1>
+    <h1>Pixel Art Maker</h1>
 
     <h2>Choose Grid Size</h2>
     <form id="sizePicker">
-        Grid Height:
+        <span class="sideLabel">Grid Height:</span>
         <input type="number" id="input_height" name="height" min="5" max="50" value="5">
-        Grid Width:
+        <span class="sideLabel">Grid Width:</span>
         <input type="number" id="input_width" name="width" min="5" max="50" value="5">
-        <input type="submit">
+        <a href="#" class="makeButton">Make</a>
+
     </form>
 
-    <h2>Pick A Color</h2>
+    <h2 id="pickColorText">Pick A Color</h2>
     <input type="color" id="colorPicker">
 
     <h2>Design Canvas</h2>
+
     <table id="pixel_canvas"></table>
 
     <script src="designs.js"></script>
+    <span class="instructions">Single click for drawing, Double for erasing.</span>
+
 </body>
 </html>
