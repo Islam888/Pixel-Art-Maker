@@ -1,43 +1,63 @@
 body {
     text-align: center;
-   
+    background-color: #559e83;
+    font-family: 'Righteous', cursive;
 }
-
 h1 {
-    font-family: Monoton;
     font-size: 70px;
     margin: 0.2em;
+    color: #ffcc5c;
 }
-
 h2 {
     margin: 1em 0 0.25em;
+    font-weight: lighter;
+    color: white;
 }
-
 h2:first-of-type {
     margin-top: 0.5em;
+    margin-bottom: 12px;
 }
-
 table,
 tr,
 td {
     border: 1px solid black;
-
 }
-
+td:hover {
+    border-right: 1.5px double rgb(248, 250, 227);
+    border-bottom: 1.5px double rgb(248, 250, 227);
+}
 table {
     border-collapse: collapse;
     margin: 0 auto;
 }
-
 tr {
     height: 20px;
 }
-
 td {
     width: 20px;
-    
+}
+input[type=number] {
+    width: 80px;
+    height: 15px;
+    font-weight: bold;
+}
+table {
+    background-color: #ffeead;
+}
+.cellColor {
+    background-color: #ffeead;
+}
+.makeButton {
+    margin-left: 10px;
+    -webkit-transition-duration: 0.5s;
+    text-decoration: none;
+    color: black;
+}
+.makeButton:hover {
+    font-size: 2em;
+    cursor: pointer;
+}
+.instructions{
+    font-weight: lighter;
 }
 
-input[type=number] {
-    width: 6em;
-}
